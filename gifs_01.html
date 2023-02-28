@@ -1,0 +1,531 @@
+<!doctype>
+<html>
+<!--comment-->
+
+<head>
+    <title>HOME_PAGE</title>
+    <meta charset="utf-8">
+    <meta name="description" content="150c">
+    <meta name="keywords" content="..., ..., ..">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="01_landing_css/01_home_style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+
+    <!--ccs-->
+    <style type="text/css">
+        body {
+            margin: 0px;
+            background-image: url("img/illustrations/lakas_blur.jpg");
+            background-size: cover;
+            height: auto;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+        }
+
+        .header {
+            top: 0px;
+            height: 220px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .nev {
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 351.5px);
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin: 0;
+            object-fit: cover;
+            background-image: url(img/nev.png);
+            background-size: cover;
+            background-position: center;
+            width: 703px;
+            height: 143px;
+            font-size: 10px;
+            transition: all 0.2s ease-in-out;
+            cursor: default;
+        }
+
+
+
+
+        .nyuszi {
+            position: absolute;
+            top: 70px;
+            left: 40px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin: 0;
+            object-fit: cover;
+            background-image: url(img/belso_en_logo_03.png);
+            background-size: cover;
+            background-position: center;
+            width: 80px;
+            height: 100px;
+            font-size: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .nyuszi:hover {
+            background-image: url(img/belso_en_logo_02.png);
+        }
+
+
+
+        .container {
+            height: 40px;
+            position: relative;
+            //* border: 1px solid green; *//
+            cursor: pointer;
+            top: 140px;
+            padding: 20px;
+        }
+
+        .button {
+            z-index: 9;
+            position: relative;
+            text-align: center;
+            top: 10px;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .b {
+            margin: inherit;
+            padding: 10px;
+            border: 0;
+            border-radius: 10px;
+            font: Maven Pro;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            font-style: italic;
+            background-color: transparent;
+            color: white;
+            text-shadow: 1px 0 10px #5f3ff0;
+            letter-spacing: 1px;
+        }
+
+        .b4 {
+            text-decoration: underline wavy;
+            text-decoration-color: aqua;
+            text-underline-offset: 8px;
+            text-shadow: 0px 0px 20px mediumvioletred;
+        }
+
+        .b:hover {
+            text-decoration: underline wavy;
+            text-decoration-color: aqua;
+            text-underline-offset: 8px;
+            text-shadow: 0px 0px 20px white;
+        }
+
+        .films {
+            visibility: hidden;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .mini {
+            visibility: hidden;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+
+
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+
+            padding: 0 4px;
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+
+        .column video {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            border-radius: 2px;
+            box-shadow: 0 0 6px;
+        }
+
+
+        /*///////////////--------------------- footer */
+        .footer {
+            width: calc(100% - 60px);
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            text-align: center;
+            font: Maven Pro;
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 15px;
+            color: white;
+            background: #5b1bf1;
+            opacity: 50%;
+            padding: 10px;
+            border-radius: 15px;
+            text-shadow: 0px 0px 20px lightgrey;
+            line-height: 20px;
+            height: 40px;
+            left: 10px;
+        }
+
+
+        .footer::after {
+            content: "COPYRIGHT  @ 2023 NIKOLETTA VERESS";
+
+        }
+
+        /*///////////////--------------------- RESPONSIVE */
+        @media screen and (max-width: 1200px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+
+            .header {
+                height: 150px;
+            }
+
+            .container {
+                visibility: hidden;
+            }
+
+            .nev {
+                width: 468.66px;
+                height: 95.33px;
+                left: calc(50% - 234.33px);
+            }
+
+            .nyuszi {
+                top: 50px;
+                left: 20px;
+                width: 53.33px;
+                height: 66.66px;
+
+            }
+
+            /*///////////////--------------------- ICON */
+
+            .mini {
+                visibility: visible;
+                top: 10px;
+                background-color: rgba(63, 40, 210, 0.96);
+                position: fixed;
+                border-radius: 15px;
+                right: 10px;
+                padding-right: 0px;
+                font-family: 'work sans', sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+                box-shadow: 0 0 20px #5b1bf1;
+                z-index: 10;
+                text-decoration: none;
+            }
+
+            .mini #minilist {
+                display: none;
+            }
+
+            .mini a {
+                margin: inherit;
+                padding: 14px;
+                border: 0;
+                border-radius: 10px;
+                font: Maven Pro;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 15px;
+                font-weight: 200;
+                font-style: italic;
+                background-color: transparent;
+                color: white;
+                text-shadow: 0px 0px 10px #5b1bf1;
+                letter-spacing: 1px;
+                display: block;
+                text-decoration: none;
+
+            }
+
+            .mini a.icon {
+                background: black;
+                box-shadow: 0 0 10px black;
+                color: white;
+                display: flex;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                border-radius: 15px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                text-decoration: none;
+                text-shadow: 0px 0px 5px white;
+            }
+
+            .mini a.icon:hover {
+                position: fixed;
+                background-color: blue;
+                border-radius: 15px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                text-decoration: none;
+                color: #a9c220;
+                text-shadow: 0px 0px 20px #a9c220;
+                z-index: 2;
+                text-decoration: none;
+            }
+
+            .mini a:hover {
+                text-decoration: underline wavy;
+                text-decoration-color: aqua;
+                text-underline-offset: 8px;
+                text-shadow: 0px 0px 20px white;
+            }
+
+            .active {
+                background-color: blueviolet;
+                color: darkblue;
+            }
+
+            /*///////////////--------------------- ICON END */
+        }
+
+        @media screen and (max-width: 800px) {
+            .header {
+                height: 50px;
+            }
+
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+
+            .container {
+                visibility: hidden;
+            }
+
+            .nev {
+                width: 208.30px;
+                height: 42.37px;
+                left: calc(50% - 104.15px);
+                top: 70px;
+            }
+
+
+            .footer {
+                font-size: 10px;
+            }
+        }
+
+        /*///////////////--------------------- RESPONSIVE END */
+
+    </style>
+
+    <!-- load jquery code -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- load jquery code -->
+
+    <!--js-->
+    <script type="text/javascript">
+        /*///////////////--------------------- WEBLAPHOZ ELERESI UTVONAL */
+
+        function visitPage1() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage2() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage3() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage4() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage5() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage6() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage7() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage8() {
+            window.location = 'http://www.google.com';
+        } /*///////////////--------------------- WEBLAPHOZ E.U. END */
+
+        function menu() {
+            var x = document.getElementById("minilist");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+
+</head>
+<!--comment-->
+
+<body>
+
+    <div class="header">
+        <div class="nev">
+            <source src="img/nev.png">
+        </div>
+        <div class="nyuszi" onclick="visitPage8();"> </div>
+
+        <div class="container">
+            <div class="button">
+                <button class="b b1" onclick="visitPage1();">FILMS</button>
+                <button class="b b2" onclick="visitPage2();">PROJECTS</button>
+                <button class="b b3" onclick="visitPage3();">COMMISSIONS</button>
+                <button class="b b4" onclick="visitPage4();">GIFS</button>
+                <button class="b b5" onclick="visitPage5();">ILLUSTRATIONS</button>
+                <button class="b b6" onclick="visitPage6();">COMICS</button>
+                <button class="b b7" onclick="visitPage7();">ABOUT</button>
+            </div>
+        </div>
+        <div class="mini">
+            <div id="minilist">
+                <a href="#news" onclick="visitPage1();">FILMS</a>
+                <a href="#projects" onclick="visitPage2();">PROJECTS</a>
+                <a href="#contact" onclick="visitPage3();">COMMISSIONS</a>
+                <a href="#about" onclick="visitPage4();">GIFS</a>
+                <a href="#about" onclick="visitPage5();">ILLUSTRATIONS</a>
+                <a href="#about" onclick="visitPage6();">COMICS</a>
+                <a href="#about" onclick="visitPage7();">ABOUT</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars">X</i>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="nyuszi" onclick="visitPage7();"> </div>
+
+
+    <div class="row">
+        <div class="column">
+
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/kartya_03_1_sound02.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/walk_pottyos_01.mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/019.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/k_fa.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/ch_001.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/ch_002.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/hamradik_000_1.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/horses.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/fordul_es_paff_v01.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/kockak_v04.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/uj.mp4" type="video/mp4" />
+            </video>
+
+
+        </div>
+        <div class="column">
+
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/fish_all_in_one_v03.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/jump_06.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/kocka_1.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/sziget.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/kavehaz_v.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/walkout.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/llook.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/loop_02.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/macskak_02.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/pui_000.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/szel.mp4" type="video/mp4" />
+            </video>
+            <video width="100%" autoplay muted loop>
+                <source src="videos/gifs/moly_teszt.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+    </div>
+    <div class="footer"></div>
+
+
+
+
+</body>
+
+</html>
