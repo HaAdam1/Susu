@@ -22,7 +22,8 @@
             background-attachment: fixed;
             background-position: top;
         }
- #background-video {
+
+        #background-video {
             width: 100vw;
             height: 100vh;
             object-fit: cover;
@@ -377,13 +378,24 @@
             }
 
             .FSZ {
-                font-size: 12px;
+                position: relative;
+                font: Maven Pro;
+                font-family: 'Maven Pro', sans-serif;
+                font-weight: 100;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                color: white;
+                border: none;
+                text-align: left;
+                letter-spacing: 0.8px;
+                text-shadow: 0px 0px 10px white;
             }
         }
 
 
         /*///////////////--------------------- RESPONSIVE END */
-
     </style>
 
     <!-- load jquery code -->
@@ -457,7 +469,6 @@
                 x.style.display = "block";
             }
         }
-
     </script>
 
 </head>
@@ -498,7 +509,7 @@
         </div>
     </div>
 
-<video autoplay muted loop id="background-video">
+    <video autoplay muted loop id="background-video">
         <source src="backgrounds/filmBG01_v02.mp4" type="video/mp4">
     </video>
 
@@ -541,6 +552,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>
