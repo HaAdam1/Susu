@@ -24,21 +24,35 @@
             background-position: top;
         }
 
-        .header {
-            top: 0px;
-            height: 300px;
+        .nev {
+            position: absolute;
+            top: 80px;
+            left: calc(50% - 351.5px);
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin: 0;
+            object-fit: cover;
+            background-image: url(img/nev.png);
+            background-size: cover;
+            background-position: center;
+            width: 703px;
+            height: 143px;
+            font-size: 10px;
+            transition: all 0.2s ease-in-out;
+
+            cursor: default;
         }
 
-        .logo {
-            position: absolute;
-            left: calc(50% - 100px);
-            top: 30px;
+        .header {
+            top: 0px;
+            height: 220px;
         }
+
 
         .nyuszi {
             position: absolute;
             top: 70px;
-            left: 30px;
+            left: 40px;
             transform: translateY(-50%);
             cursor: pointer;
             margin: 0;
@@ -50,7 +64,6 @@
             height: 100px;
             font-size: 10px;
             transition: all 0.2s ease-in-out;
-
         }
 
         .nyuszi:hover {
@@ -60,182 +73,54 @@
 
 
         .container {
-            height: 70px;
+            height: 40px;
             position: relative;
-            //*border: 1px solid red;*//
+            //* border: 1px solid green; *//
             cursor: pointer;
-            top: 230px;
+            top: 140px;
             padding: 20px;
-
         }
 
         .button {
             z-index: 9;
             position: relative;
             text-align: center;
-            top: 50%;
+            top: 10px;
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             padding: 10px;
             margin: 0px;
-            margin-bottom: 10px;
+        }
+
+        .b {
+            margin: inherit;
+            padding: 10px;
+            border: 0;
+            border-radius: 10px;
+            font: Maven Pro;
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+            text-shadow: 0px 0px 10px #5b1bf1;
+            letter-spacing: 1px;
         }
 
         .b1 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
+            text-decoration: underline wavy;
+            text-decoration-color: mediumvioletred;
+            text-underline-offset: 8px;
+            text-shadow: 0px 0px 20px mediumvioletred;
         }
 
-        .b1:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
+        .b:hover {
+            text-decoration: underline wavy;
+            text-decoration-color: aqua;
+            text-underline-offset: 8px;
+            text-shadow: 0px 0px 20px white;
         }
-
-        .b2 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
-        }
-
-        .b2:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
-        }
-
-        .b3 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
-        }
-
-        .b3:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
-        }
-
-        .b4 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
-        }
-
-        .b4:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
-        }
-
-        .b5 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
-        }
-
-        .b5:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
-        }
-
-        .b6 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
-        }
-
-        .b6:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
-        }
-
-        .b7 {
-            margin: inherit;
-            padding: 10px;
-            border: 0;
-            border-radius: 7px;
-            font: Maven Pro;
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 15px;
-            font-weight: 100;
-            background-color: a9c220;
-            color: white;
-            border: 1px solid #5b1bf1;
-            box-shadow: 3px 3px #5b1bf1;
-            transition: ease-in-out 0.2s;
-            margin-right: 10px;
-        }
-
-        .b7:hover {
-            transform: translateY(3px);
-            box-shadow: 0 0px #5b1bf1;
-        }
-
 
         .films {
             visibility: hidden;
@@ -260,6 +145,10 @@
 
         }
 
+        .mini {
+            visibility: hidden;
+        }
+
         /* Create four equal columns that sits next to each other */
         .column {
             -ms-flex: 25%;
@@ -280,24 +169,24 @@
 
         /*///////////////--------------------- footer */
         .footer {
-            position: relative;
-            bottom: 10px;
-            width: calc(100% - 40px);
+            width: calc(100% - 60px);
             margin-left: 20px;
-            height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px;
             font-weight: 400;
             text-align: center;
             font: Maven Pro;
             font-family: 'Maven Pro', sans-serif;
             font-size: 15px;
-            color: lightgrey;
-            background: black;
+            color: white;
+            background: #5b1bf1;
             opacity: 50%;
             padding: 10px;
             border-radius: 15px;
-            margin-top: 100px;
             text-shadow: 0px 0px 20px lightgrey;
             line-height: 20px;
+            height: 40px;
+            left: 10px;
         }
 
 
@@ -306,34 +195,47 @@
 
         }
 
+
         /*///////////////--------------------- RESPONSIVE */
         @media screen and (max-width: 1200px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-
-            .logo {
-                top: 20px;
+            .header {
+                height: 150px;
             }
 
             .container {
                 visibility: hidden;
             }
 
-            .films {
+            .nev {
+                width: 468.66px;
+                height: 95.33px;
+                left: calc(50% - 234.33px);
+            }
+ .nev {
+                width: 468.66px;
+                height: 95.33px;
+                left: calc(50% - 234.33px);
+            }
+            .nyuszi {
+                top: 50px;
+                left: 20px;
+                width: 53.33px;
+                height: 66.66px;
+                font-size: 10px;
+            }
+
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+
+            /*///////////////--------------------- ICON */
+
+            .mini {
                 visibility: visible;
                 top: 10px;
-                background-color: #a9c220;
+                background-color: rgba(105, 110, 250, 0.7);
                 position: fixed;
                 border-radius: 15px;
                 right: 10px;
@@ -341,28 +243,34 @@
                 font-family: 'Maven Pro', sans-serif;
                 font-size: 15px;
                 font-weight: 100;
-                box-shadow: 0 0 20px #a9c220;
-                z-index: 1;
+                box-shadow: 0 0 20px #5b1bf1;
+                z-index: 10;
+                text-decoration: none;
             }
 
-            .films #filmlist {
+            .mini #minilist {
                 display: none;
             }
 
-            .films a {
+            .mini a {
+                margin: inherit;
+                padding: 14px;
+                border: 0;
+                border-radius: 10px;
+                font: Maven Pro;
                 font-family: 'Maven Pro', sans-serif;
                 font-size: 15px;
-                font-weight: 100;
-                color: black;
-                text-shadow: 0px 0px 2px black;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
+                font-weight: bold;
+                background-color: transparent;
+                color: white;
+                text-shadow: 0px 0px 10px #5b1bf1;
+                letter-spacing: 1px;
                 display: block;
+                text-decoration: none;
 
             }
 
-            .films a.icon {
+            .mini a.icon {
                 background: black;
                 box-shadow: 0 0 10px black;
                 color: white;
@@ -377,7 +285,7 @@
                 text-shadow: 0px 0px 5px white;
             }
 
-            .films a.icon:hover {
+            .mini a.icon:hover {
                 position: fixed;
                 background-color: blue;
                 border-radius: 15px;
@@ -386,17 +294,51 @@
                 text-decoration: none;
                 color: #a9c220;
                 text-shadow: 0px 0px 20px #a9c220;
+                z-index: 2;
+                text-decoration: none;
             }
 
-            .films a:hover {
-                color: white;
-                border-radius: 15px;
-text-shadow: 0px 0px 20px white;
+            .mini a:hover {
+                text-decoration: underline wavy;
+                text-decoration-color: aqua;
+                text-underline-offset: 8px;
+                text-shadow: 0px 0px 20px white;
             }
 
             .active {
                 background-color: blueviolet;
                 color: darkblue;
+            }
+
+            /*///////////////--------------------- ICON END */
+        }
+
+        @media screen and (max-width: 800px) {
+            .header {
+                height: 100px;
+            }
+
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+
+
+            .container {
+                visibility: hidden;
+            }
+
+            .nev {
+                width: 208.30px;
+                height: 42.37px;
+                left: calc(50% - 104.15px);
+                top: 70px;
+            }
+
+
+            .footer {
+                font-size: 10px;
             }
         }
 
@@ -438,11 +380,14 @@ text-shadow: 0px 0px 20px white;
 
         function visitPage7() {
             window.location = 'http://www.google.com';
-        } /*///////////////--------------------- WEBLAPHOZ E.U. END */
+        }
+        function visitPage8() {
+            window.location = 'http://www.google.com';
+        }/*///////////////--------------------- WEBLAPHOZ E.U. END */
 
 
         function menu() {
-            var x = document.getElementById("filmlist");
+            var x = document.getElementById("minilist");
             if (x.style.display === "block") {
                 x.style.display = "none";
 
@@ -458,26 +403,31 @@ text-shadow: 0px 0px 20px white;
 <body>
 
     <div class="header">
-        <div class="logo">
+        <div class="nev">
+            <source src="img/nev.png">
         </div>
+        <div class="nyuszi" onclick="visitPage8();"> </div>
+
         <div class="container">
             <div class="button">
-                <button class="b1" onclick="visitPage1();">FILMS</button>
-                <button class="b2" onclick="visitPage2();">COMMISSION</button>
-                <button class="b3" onclick="visitPage3();">ILLUSTRATIONS</button>
-                <button class="b4" onclick="visitPage4();">GIFS</button>
-                <button class="b5" onclick="visitPage5();">COMICS</button>
-                <button class="b6" onclick="visitPage6();">ABOUT</button>
+                <button class="b b1" onclick="visitPage1();">FILMS</button>
+                <button class="b b2" onclick="visitPage2();">PROJECTS</button>
+                <button class="b b3" onclick="visitPage3();">COMMISSIONS</button>
+                <button class="b b4" onclick="visitPage4();">GIFS</button>
+                <button class="b b6" onclick="visitPage5();">ILLUSTRATIONS</button>
+                <button class="b b5" onclick="visitPage6();">COMICS</button>
+                <button class="b b7" onclick="visitPage7();">ABOUT</button>
             </div>
         </div>
-        <div class="films">
-            <div id="filmlist">
-                <a href="#news">FILMS</a>
-                <a href="#contact">COMMISSIONS</a>
-                <a href="#about">ILLUSTRATIONS</a>
-                <a href="#about">GIFS</a>
-                <a href="#about">COMICS</a>
-                <a href="#about">ABOUT</a>
+        <div class="mini">
+            <div id="minilist">
+                <a href="#news" onclick="visitPage1();">FILMS</a>
+                <a href="#projects" onclick="visitPage2();">PROJECTS</a>
+                <a href="#contact" onclick="visitPage3();">COMMISSIONS</a>
+                <a href="#about" onclick="visitPage4();">GIFS</a>
+                <a href="#about" onclick="visitPage5();">ILLUSTRATIONS</a>
+                <a href="#about" onclick="visitPage6();">COMICS</a>
+                <a href="#about" onclick="visitPage7();">ABOUT</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="menu()">
                 <i class="fa fa-bars">X</i>
@@ -561,6 +511,7 @@ text-shadow: 0px 0px 20px white;
             <img src="img/illustrations/bg_vizalatt_01.jpg" style="width:100%">
             <img src="img/illustrations/kis_with_ghosts.jpg" style="width:100%">
         </div>
+
         <div class="footer"></div>
 
 
