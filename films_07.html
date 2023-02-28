@@ -1,0 +1,619 @@
+<!doctype>
+<html>
+<!--comment-->
+
+<head>
+    <title>HOME_PAGE</title>
+    <meta charset="utf-8">
+    <meta name="description" content="150c">
+    <meta name="keywords" content="..., ..., ..">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="01_landing_css/01_home_style.css" type="text/css" rel="stylesheet">
+
+
+    <!--ccs-->
+    <style type="text/css">
+        body {
+            margin: 0px;
+            width: 100%;
+            height: auto;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            margin: 0;
+        }
+
+        .header {
+            top: 0px;
+            height: 200px;
+        }
+
+        .logo {
+            position: absolute;
+            left: calc(50% - 100px);
+            top: 30px;
+        }
+
+        .nev {
+            position: absolute;
+            top: 80px;
+            left: calc(50% - 351.5px);
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin: 0;
+            object-fit: cover;
+            background-image: url(img/nev.png);
+            background-size: cover;
+            background-position: center;
+            width: 703px;
+            height: 143px;
+            font-size: 10px;
+            transition: all 0.2s ease-in-out;
+
+            cursor: default;
+        }
+
+        .nyuszi {
+            position: absolute;
+            top: 70px;
+            left: 40px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            margin: 0;
+            object-fit: cover;
+            background-image: url(img/belso_en_logo_03.png);
+            background-size: cover;
+            background-position: center;
+            width: 80px;
+            height: 100px;
+            font-size: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .nyuszi:hover {
+            background-image: url(img/belso_en_logo_02.png);
+        }
+
+        .container {
+            height: 40px;
+            position: relative;
+            //* border: 1px solid green; *//
+            cursor: pointer;
+            top: 140px;
+            padding: 20px;
+        }
+
+        .button {
+            z-index: 9;
+            position: relative;
+            text-align: center;
+            top: 10px;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .b {
+            margin: inherit;
+            padding: 10px;
+            border: 0;
+            border-radius: 10px;
+            font: Maven Pro;
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+            text-shadow: 0px 0px 10px #5b1bf1;
+            letter-spacing: 1px;
+        }
+
+        .b1 {
+            text-decoration: underline wavy;
+            text-decoration-color: mediumvioletred;
+            text-underline-offset: 8px;
+            text-shadow: 0px 0px 20px mediumvioletred;
+        }
+
+        .b:hover {
+            text-decoration: underline wavy;
+            text-decoration-color: aqua;
+            text-underline-offset: 8px;
+            text-shadow: 0px 0px 20px white;
+        }
+
+
+
+        /*///////////////--------------------- FILMS */
+
+
+        .filmT {
+            z-index: 9;
+            position: relative;
+            text-align: center;
+            padding: 0px;
+            align-content: flex-start;
+            top: 0px;
+            height: auto;
+            flex-wrap: wrap;
+            margin-bottom: 130px;
+        }
+
+        .FK {
+            font: Maven Pro;
+            font-family: 'Maven Pro', sans-serif;
+            font-weight: bold;
+            background-size: 400px;
+            background-position: center;
+            line-height: 30px;
+            height: 200px;
+            width: 400px;
+            margin: 30px;
+            border-radius: 11px;
+            color: transparent;
+            border: 0;
+            box-shadow: 2px 2px 10px #5b1bf1;
+            opacity: 85%;
+        }
+
+        .FSZ {
+            position: relative;
+            font: Maven Pro;
+            font-family: 'Maven Pro', sans-serif;
+            font-weight: 100;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: white;
+            font-size: 16px;
+            border: none;
+            text-align: left;
+            letter-spacing: 0.8px;
+            text-shadow: 0px 0px 10px white;
+        }
+
+        .FK:hover {
+            opacity: 100%;
+        }
+
+        .FK1 {
+            background-image: url(films/diplomaproject/concept_kopik_01.jpg);
+        }
+
+        .FK2 {
+            background-image: url("films/playground/gif2.gif");
+        }
+
+        .FK3 {
+            background-image: url("films/loner/gif2.gif");
+        }
+
+        .FK4 {
+            background-image: url("films/beginners_doing_sports/gif2.gif");
+        }
+
+        .FK5 {
+            background-image: url("films/deerdogs/gif2.gif");
+        }
+
+        .mini {
+            visibility: hidden;
+        }
+
+        /*///////////////--------------------- FILMS END */
+
+        /*///////////////--------------------- footer */
+        .footer {
+            width: calc(100% - 60px);
+            margin-left: 20px;
+            margin-right: 20px;
+            font-weight: 400;
+            text-align: center;
+            font: Maven Pro;
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 15px;
+            color: white;
+            background: #5b1bf1;
+            opacity: 50%;
+            padding: 10px;
+            border-radius: 15px;
+            text-shadow: 0px 0px 20px lightgrey;
+            line-height: 20px;
+            height: 20px;
+
+        }
+
+
+        .footer::after {
+            content: "COPYRIGHT  @ 2023 NIKOLETTA VERESS";
+
+        }
+
+        /*///////////////--------------------- RESPONSIVE */
+        @media screen and (max-width: 1200px) {
+            .header {
+                height: 150px;
+            }
+
+            .FK {
+                opacity: 100%;
+            }
+
+            .container {
+                visibility: hidden;
+            }
+
+            .nev {
+                width: 468.66px;
+                height: 95.33px;
+                left: calc(50% - 234.33px);
+            }
+
+            .nyuszi {
+                top: 50px;
+                left: 20px;
+                width: 53.33px;
+                height: 66.66px;
+                font-size: 10px;
+            }
+
+
+            /*///////////////--------------------- ICON */
+
+            .mini {
+                visibility: visible;
+                top: 10px;
+                background-color: rgba(105, 110, 250, 0.7);
+                position: fixed;
+                border-radius: 15px;
+                right: 10px;
+                padding-right: 0px;
+                font-family: 'Maven Pro', sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+                box-shadow: 0 0 20px #5b1bf1;
+                z-index: 10;
+            }
+
+            .mini #minilist {
+                display: none;
+            }
+
+            .mini a {
+                margin: inherit;
+                padding: 14px;
+                border: 0;
+                border-radius: 10px;
+                font: Maven Pro;
+                font-family: 'Maven Pro', sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: transparent;
+                color: white;
+                text-shadow: 0px 0px 10px #5b1bf1;
+                letter-spacing: 1px;
+                display: block;
+
+            }
+
+            .mini a.icon {
+                background: black;
+                box-shadow: 0 0 10px black;
+                color: white;
+                display: flex;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                border-radius: 15px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                text-decoration: none;
+                text-shadow: 0px 0px 5px white;
+            }
+
+            .mini a.icon:hover {
+                position: fixed;
+                background-color: blue;
+                border-radius: 15px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                text-decoration: none;
+                color: #a9c220;
+                text-shadow: 0px 0px 20px #a9c220;
+                z-index: 2;
+            }
+
+            .mini a:hover {
+                text-decoration: underline wavy;
+                text-decoration-color: aqua;
+                text-underline-offset: 8px;
+                text-shadow: 0px 0px 20px white;
+            }
+
+            .active {
+                background-color: blueviolet;
+                color: darkblue;
+            }
+
+            /*///////////////--------------------- ICON END */
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .header {
+                height: 100px;
+            }
+
+            .FK {
+                opacity: 100%;
+            }
+
+            .container {
+                visibility: hidden;
+            }
+
+            .nev {
+                width: 312.44px;
+                height: 63.55px;
+                left: calc(50% - 156.22px);
+                top: 70px;
+            }
+
+            /*///////////////--------------------- ICON */
+
+            .mini {
+                visibility: visible;
+                top: 10px;
+                background-color: rgba(105, 110, 250, 0.7);
+                position: fixed;
+                border-radius: 15px;
+                right: 10px;
+                padding-right: 0px;
+                font-family: 'Maven Pro', sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+                box-shadow: 0 0 20px #5b1bf1;
+                z-index: 10;
+            }
+
+            .mini #minilist {
+                display: none;
+            }
+
+            .mini a {
+                margin: inherit;
+                padding: 14px;
+                border: 0;
+                border-radius: 10px;
+                font: Maven Pro;
+                font-family: 'Maven Pro', sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: transparent;
+                color: white;
+                text-shadow: 0px 0px 10px #5b1bf1;
+                letter-spacing: 1px;
+                display: block;
+
+            }
+
+            .mini a.icon {
+                background: black;
+                box-shadow: 0 0 10px black;
+                color: white;
+                display: flex;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                border-radius: 15px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                text-decoration: none;
+                text-shadow: 0px 0px 5px white;
+            }
+
+            .mini a.icon:hover {
+                position: fixed;
+                background-color: blue;
+                border-radius: 15px;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                text-decoration: none;
+                color: #a9c220;
+                text-shadow: 0px 0px 20px #a9c220;
+                z-index: 2;
+            }
+
+            .mini a:hover {
+                text-decoration: underline wavy;
+                text-decoration-color: aqua;
+                text-underline-offset: 8px;
+                text-shadow: 0px 0px 20px white;
+            }
+
+            .active {
+                background-color: blueviolet;
+                color: darkblue;
+            }
+
+        }
+
+
+        /*///////////////--------------------- RESPONSIVE END */
+    </style>
+
+    <!-- load jquery code -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- load jquery code -->
+
+    <!--js-->
+    <script type="text/javascript">
+        /*///////////////--------------------- WEBLAPHOZ ELERESI UTVONAL */
+
+        function visitPage1() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage2() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage3() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage4() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage5() {
+            window.location = 'http://127.0.0.1:60486/illustrations_01v02.html';
+        }
+
+        function visitPage6() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage7() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPage8() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPageF1() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPageF2() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPageF3() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPageF4() {
+            window.location = 'http://www.google.com';
+        }
+
+        function visitPageF5() {
+            window.location = 'http://www.google.com';
+        }
+        /*///////////////--------------------- WEBLAPHOZ E.U. END */
+
+        function menu() {
+            var x = document.getElementById("minilist");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+<!--comment-->
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+        </div>
+        <div class="nev">
+            <source src="img/nev.png">
+        </div>
+        <div class="nyuszi" onclick="visitPage8();"> </div>
+
+        <div class="container">
+            <div class="button">
+                <button class="b b1" onclick="visitPage1();">FILMS</button>
+                <button class="b b2" onclick="visitPage2();">PROJECTS</button>
+                <button class="b b3" onclick="visitPage3();">COMMISSIONS</button>
+                <button class="b b4" onclick="visitPage4();">GIFS</button>
+                <button class="b b6" onclick="visitPage5();">ILLUSTRATIONS</button>
+                <button class="b b5" onclick="visitPage6();">COMICS</button>
+                <button class="b b7" onclick="visitPage7();">ABOUT</button>
+            </div>
+        </div>
+        <div class="mini">
+            <div id="minilist">
+                <a href="#news" onclick="visitPage1();">FILMS</a>
+                <a href="#projects" onclick="visitPage2();">PROJECTS</a>
+                <a href="#contact" onclick="visitPage3();">COMMISSIONS</a>
+                <a href="#about" onclick="visitPage4();">GIFS</a>
+                <a href="#about" onclick="visitPage5();">ILLUSTRATIONS</a>
+                <a href="#about" onclick="visitPage6();">COMICS</a>
+                <a href="#about" onclick="visitPage7();">ABOUT</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars">X</i>
+            </a>
+        </div>
+    </div>
+
+    <video autoplay muted loop id="background-video">
+        <source src="backgrounds/filmBG01_v02.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="filmT">
+
+        <button class="FK FK1" onclick="visitPageF1();"> 01
+            <p class="FSZ FSZ1">DIPLOMAPROJECT // under production
+            </p>
+        </button>
+
+        <button class="FK FK2" onclick="visitPageF2();"> 02
+            <p class="FSZ FSZ2"> PLAYGROUND // 2022
+            </p>
+        </button>
+
+        <button class="FK FK3" onclick="visitPageF3();"> 03
+            <p class="FSZ FSZ3"> LONER // 2021
+            </p>
+        </button>
+
+        <button class="FK FK4" onclick="visitPageF4();"> 04
+            <p class="FSZ FSZ4"> BEGINNERS DOING SPORTS // 2019
+            </p>
+        </button>
+
+        <button class="FK FK5" onclick="visitPageF5();"> 05
+            <p class="FSZ FSZ5"> DEERDOGS // 2018
+            </p>
+        </button>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer"></div>
+
+
+
+
+</body></html>
