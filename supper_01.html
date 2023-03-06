@@ -184,11 +184,29 @@
             font-size: 30px;
             letter-spacing: 5px;
             text-shadow: 0 0 1px blue;
-            left: calc(50% - 290px);
+            position: relative;
+            text-align: center;
             overflow: hidden;
-            width: 600px;
         }
-    
+
+        a.text:active,
+        a.text:visited,
+        a.text:link {
+            position: relative;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            padding: 10px;
+            left: 0;
+            color: blue;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        a.text:hover {
+            text-decoration: underline;
+        }
+
         .trailer {
             top: 0px;
             position: relative;
@@ -201,6 +219,10 @@
             margin-top: 50px;
             margin-bottom: 50px;
             box-shadow: 0px 0px 10px darkseagreen;
+        }
+        .photos{
+            font-size: 10px;
+            text-align: end;
         }
 
         /*///////////////--------------------- FILMS END */
@@ -235,17 +257,20 @@
             border-radius: 2px;
             box-shadow: 0 0 5px darkseagreen;
         }
-        .fullkep{
+
+        .fullkep {
             margin-top: 40px;
             box-shadow: 0 0 5px darkseagreen;
         }
-.credits{
+
+        .credits {
             text-align: center;
         }
+
         /*///////////////--------------------- footer */
         .footer {
             position: relative;
-            width: calc(100% - 40px);
+            width: calc(100% - 60px);
             margin-left: 20px;
             height: auto;
             font-weight: 400;
@@ -294,11 +319,11 @@
                 height: 66.66px;
                 font-size: 10px;
             }
+
             .title {
                 font-size: 25px;
-                left: calc(50% - 250px);
-                width: 600px;
             }
+
             .row {
 
                 margin-left: 100px;
@@ -400,7 +425,7 @@
             /*///////////////--------------------- ICON END */
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 600px) {
             .header {
                 height: 100px;
             }
@@ -423,17 +448,21 @@
             }
 
             .nev {
-                width: 312.45px;
-                height: 63.555px;
-                left: calc(50% - 156.225px);
-                top: 55px;
+                width: 234.33px;
+                height: 47.5526px;
+                left: calc(50% - 117.165px);
+                top: 60px;
             }
+
+            .nyuszi {
+                left: 15px;
+
+            }
+
             .title {
                 font-size: 20px;
-                left: calc(50% - 200px);
-                width: 400px;
-                text-align: center;
             }
+
             .trailer {
                 margin-left: 15px;
                 margin-right: 15px;
@@ -557,20 +586,22 @@
 
     <div class="row">
         <div class="column">
-            <p class="text leiras"> <br><i>SUPPER</i> is an animated short film made by Dániel Bárány in 2022. <br>It was really fun to animate. You can watch some of the scenes that I did.</p>
+            <p class="text leiras"><br><i><a class="text" href="https://www.facebook.com/frisskakas" target="_blank"><u>SUPPER</u></a></i>is a dynamic animation, a brilliant use of space distortions and morphs, which presents a familiar situation with grotesque humour: the (supposedly intimate) family meal. The conflicts between the characters take shape and almost bury everyone, but in the end everyone is saved by a common effort.<br><br>It was really fun to work on this project. Now you can watch some of the scenes that I animated.
+            </p>
         </div>
 
         <div class="column">
             <div class="poster">
-                <img src="commissions/04_supper/poster_02.jpg" width="600px">
+                <img src="commissions/04_supper/poster.jpg" width="600px">
             </div>
         </div>
     </div>
-    
 
-    <div class="trailer">   
-        <video src="commissions/04_supper/supper_jelenetek.mp4" type="video/mp4" width="100%" controls poster="commissions/04_supper/poster_03.jpg">
+
+    <div class="trailer">
+        <video src="commissions/04_supper/supper_jelenetek_2.mp4" type="video/mp4" width="100%" controls poster="commissions/04_supper/poster_03.jpg">
         </video>
+        <p class="text photos">*Music: microdosemike - Kefír</p>
     </div>
 
 
@@ -584,10 +615,24 @@
             <img src="commissions/04_supper/poster_09.jpg" width="100%">
         </div>
     </div>
-    
+
+    <div class="row3">
+        <div class="column3">
+            <img src="commissions/04_supper/conc_01.jpg" width="100%">
+            <img src="commissions/04_supper/conc_02.jpg" width="100%">
+            <img src="commissions/04_supper/conc_03.jpg" width="100%">
+        </div>
+        <div class="column3">
+            <img src="commissions/04_supper/conc_05.jpg" width="100%">
+            <img src="commissions/04_supper/conc_06.jpg" width="100%">
+            <img src="commissions/04_supper/conc_04.jpg" width="100%">
+            <p class="text photos">*Concepts and stills by Dániel Bárány</p>
+        </div>
     </div>
- <div class="text credits">
-        <p>Nikoletta Veress<br><br>2021</p>
+
+
+    <div class="text credits">
+        <p>WRITER AND DIRECTOR__Dániel Bárány<br>COMPOSER__Gergő Kováts<br>SOUND DESIGNER__Lajos Érsek<br>3D BACKGROUND__Márk Juhász<br>PRODUCER__Gábor Osváth<br>EXECUTIVE PRODUCER__Zoltán Mártonffy<br>LEAD ANIMATOR__Nikoletta Veress<br>SUPERVISOR__Nadja Andrasev<br><br>2021</p>
     </div>
     <div class="footer"></div>
 
